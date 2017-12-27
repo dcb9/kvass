@@ -19,3 +19,23 @@ $ make init
 ```shell
 $ make deploy
 ```
+
+I recommanded a tool, [direnv](https://direnv.net/) to localize and automatically set the variables when you're working on a project.
+
+# Invoke
+
+### PUT
+
+PUT 'Invoke URL'/__KEY__
+
+request body: __BODY__
+
+response status code: 201
+
+### GET
+
+GET 'Invoke URL'/__KEY__
+
+response content type: text/plain
+
+response status code: 200

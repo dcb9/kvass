@@ -1,2 +1,4 @@
 /.envrc
 /project.json
+/env.json
+/functions/kvass/main
