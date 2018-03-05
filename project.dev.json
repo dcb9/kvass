@@ -1,0 +1,12 @@
+{
+  "name": "kvass",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::917001910072:role/kvass_lambda_function",
+  "environment": {
+	"AWS_SDK_LOAD_CONFIG": "1",
+	"AWS_S3_BUCKET": "bobtestprekeys",
+	"DEBUG_MODE": "1"
+  }
+}
