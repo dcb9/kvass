@@ -81,7 +81,10 @@ func main() {
 	})
 
 	handler := cors.New(cors.Options{
-		AllowedOrigins: getAllowedOrigins(),
+		AllowedOrigins:   getAllowedOrigins(),
+		AllowedMethods:   []string{"GET", "PUT", "OPTIONS"},
+		AllowCredentials: true,
+		AllowedHeaders:   []string{"*"},
 	}).Handler(mux)
 
 	apex.Handle(proxy.Serve(handler))
