@@ -1,4 +1,4 @@
 /.envrc
-/project.json
-/env.json
+/.envrc.*
+/project.*.json
 /functions/kvass/main
